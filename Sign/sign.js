@@ -27,7 +27,7 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
     const data = await response.json();
     if (response.ok) {
       alert("Registration Successful!");
-      window.location.href = "http://127.0.0.1:5500/Donor/Dashboard.html"; // Redirect to login page
+      window.location.href = "http://127.0.0.1:5500/Sign/Dashboard.html"; // Redirect to login page
     } else {
       alert("Error: " + (data.message || "Signup failed"));
     }
@@ -60,7 +60,7 @@ document.getElementById("signin-form").addEventListener("submit", async (e) => {
 
       // alert("Login Successful!");
       // localStorage.setItem("token", data.token); // Store token for authentication
-      window.location.replace("http://127.0.0.1:5500/Donor/Dashboard.html"); // Redirect to dashboard
+      window.location.replace("http://127.0.0.1:5500/Sign/Dashboard.html"); // Redirect to dashboard
     } else {
       alert("Error: " + (data.message || "Invalid credentials"));
     }
